@@ -1,0 +1,11 @@
+name: Moo
+on: push
+
+jobs:
+  Cow:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: mscoutermarsh/cowsays-action@master
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        args: "Ship it!!!!!"
