@@ -7,7 +7,7 @@ jobs:
     steps:
     - uses: vsoch/pull-request-action@master
       env: 
-        BRANCH_PREFIX = "update/"
-        PULL_REQUEST_BRANCH = "master"
+        BRANCH_PREFIX = update
+        PULL_REQUEST_BRANCH = master
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
