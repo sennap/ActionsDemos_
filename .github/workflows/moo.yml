@@ -1,8 +1,8 @@
-name: Moo
+name: Cow
 on: push
 
 jobs:
-  Cow:
+  Moo:
     runs-on: ubuntu-latest
     steps:
     - uses: mscoutermarsh/cowsays-action@master
