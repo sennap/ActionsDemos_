@@ -1,0 +1,10 @@
+name: on pull request changes, assign size labels
+on: pull_request
+
+jobs:
+  assignSizeLabels:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: pascalgn/size-label-action@397e38b11f1a8d4988db00d37b93ed1df6f05f4
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
